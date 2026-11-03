@@ -1,4 +1,4 @@
-#include "paddle.h"
+#include "Paddle.h"
 
 Paddle::Paddle(float startX, float startY, float w, float h, float s) {
     x = startX;
@@ -27,7 +27,7 @@ void Paddle::Draw() const {
     DrawRectangle((int)x, (int)y, (int)width, (int)height, WHITE);
 }
 
-Rectangle Paddle::GetRect() const {
+Rectangle Paddle::getRect() const {
     return Rectangle{ x, y, width, height};
 }
 

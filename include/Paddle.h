@@ -8,8 +8,8 @@ class Paddle {
 
     public:
          Paddle(float startX, float startY, float w, float h, float s);
-         void update(Keyboard keyUp, Keyboard keyDown);
+         void Update(KeyboardKey keyUp, KeyboardKey keyDown);
          void Draw() const;
-         Recatangle getRect() const;
+         Rectangle getRect() const;
 };
 
